@@ -1,0 +1,260 @@
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .section-testimonials {
+    grid-template-columns: 65fr 35fr;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .testimonials-container {
+    padding: 4.4rem;
+  }
+  .testimonials {
+    grid-template-columns: 2fr;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  .heading-tertianary {
+    font-size: 2.4rem;
+  }
+  .header {
+    padding: 0 3.2rem;
+  }
+  .hero {
+    gap: 4.8rem;
+  }
+  .main-nav-list {
+    gap: 4.4rem;
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  /* .logos {
+    gap: 3.2rem;
+  } */
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+  .hero-img {
+    width: 60%;
+  }
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+  .delivered-meals {
+    margin-top: 3.2rem;
+    justify-content: center;
+  }
+  .logos img {
+    height: 2.4rem;
+  }
+  .step-number {
+    font-size: 7.4rem;
+  }
+  .meal-content {
+    padding: 3.2rem 3.2rem;
+    padding-top: 2.4rem;
+  }
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .testimonials {
+    grid-template-columns: 1fr 1fr;
+  }
+  .pricing-plan {
+    width: 85%;
+  }
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+    column-gap: 2.4rem;
+    row-gap: 3.2rem;
+  }
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+
+  .grid {
+    column-gap: 3.2rem;
+    row-gap: 4.8rem;
+  }
+  .main-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    /* transform: translateX(100%); */
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 0; */
+    transition: all 0.5s;
+    z-index: 9999;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .main-nav .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .nav-open .main-nav {
+    /* opacity: 1; */
+    left: 0;
+    /* transform: translateX(0); */
+    pointer-events: auto;
+    visibility: visible;
+  }
+  .nav-open #mobile-nav-close {
+    display: block;
+  }
+  .nav-open #mobile-nav-open {
+    display: none;
+  }
+  .btn-mobile-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 44em) {
+  html {
+    font-size: 40%;
+  }
+  .grid--4-cols,
+  .grid--3-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .nav-col {
+    grid-column: span 2;
+    grid-row: 1;
+    margin-bottom: 3.2rem;
+  }
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 34em) {
+  .grid--4-cols,
+  .grid--3-cols,
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+  .pricing-plan--starter,
+  .pricing-plan--complete {
+    justify-self: center;
+  }
+  .plan-details {
+    margin-top: 3.2rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .logos img {
+    height: 1.2rem;
+  }
+  .hero-img {
+    width: 80%;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2rem 1.6rem;
+  }
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:last-child {
+    grid-row: 5;
+  }
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+  .pricing-plan--complete::after {
+    top: 6%;
+    right: -8%;
+  }
+  .testimonials-container {
+    padding: 3.2rem;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .heading-secondary {
+    font-size: 3.2rem;
+    margin-bottom: 4.4rem;
+  }
+  .section-pricing,
+  .section-testimonials,
+  .section-cta,
+  .section-how,
+  .testimonials {
+    padding: 2rem 0;
+  }
+  .footer {
+    border-top: 1px solid #eee;
+    padding: 9.2rem 0;
+  }
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+  .main-nav .main-nav-list {
+    flex-direction: column;
+    gap: 4.4rem;
+  }
+}
